@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Volunteer Verification</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Volunteer Verification System</h1>
+
+    <div class="section">
+      <h3>Text Input</h3>
+      <textarea
+        id="textInput"
+        rows="4"
+        cols="50"
+        placeholder="Type your response here..."
+      ></textarea
+      ><br />
+      <button onclick="analyzeText()">Analyze Text</button>
+      <p id="textResult"></p>
+    </div>
+
+    <div class="section">
+      <h3>Voice Input</h3>
+      <input type="file" id="voiceInput" accept="audio/*" /><br />
+      <button onclick="analyzeVoice()">Analyze Voice</button>
+      <p id="voiceResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
